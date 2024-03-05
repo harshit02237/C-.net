@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] sourceArray = { 1, 2, 3, 4, 5 };
+
+        int[] destinationArray = new int[sourceArray.Length];
+
+        Array.Copy(sourceArray, destinationArray, sourceArray.Length);
+
+        Console.WriteLine("Elements of the destination array:");
+        foreach (int num in destinationArray)
+        {
+            Console.WriteLine(num);
+        }
+    }
+}
